@@ -1,8 +1,23 @@
 aid: vuori
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vuori.png
 name: Vuori
-description: 'Vuori is a company surfaced as a portfolio company of softbank-vision-fund and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Vuori is an American athletic and performance apparel brand founded in 2015 in Encinitas,
+  California. It designs and sells men''s and women''s activewear, athleisure, and lifestyle clothing
+  through a direct-to-consumer Shopify storefront, its own retail stores, and wholesale partners. Vuori
+  operates as a consumer retail company and does not publish a public developer API or developer portal;
+  this profile captures the public web, security, and LLM-discovery surfaces it does expose. It was
+  surfaced as a portfolio company of softbank-vision-fund.'
 url: https://raw.githubusercontent.com/api-evangelist/vuori/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +27,49 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Apparel
+- Athletic Apparel
+- Activewear
+- Retail
+- Ecommerce
+- Direct-to-Consumer
 apis: []
+common:
+- type: Website
+  url: https://vuoriclothing.com/
+- type: Support
+  url: https://help.vuoriclothing.com/
+- type: HelpCenter
+  url: https://vuori.kustomer.help/
+- type: Blog
+  url: https://vuoriclothing.com/blogs
+- type: TermsOfService
+  url: https://vuoriclothing.com/pages/terms-of-use
+- type: PrivacyPolicy
+  url: https://vuoriclothing.com/pages/privacy-policy
+- type: SecurityTxt
+  url: well-known/vuori-security.txt
+- type: WellKnown
+  url: well-known/vuori-well-known.yml
+- type: LLMsTxt
+  url: llms/vuori-llms.txt
+- type: VulnerabilityDisclosure
+  url: security/vuori-vulnerability-disclosure.yml
+- type: Security
+  url: security/vuori-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/vuori-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
